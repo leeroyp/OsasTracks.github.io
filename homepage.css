@@ -1,0 +1,46 @@
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #FF7F50;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  a:hover {
+      background-color: black;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .homePage{
+    /* background-image: url('https://cdn.wallpapersafari.com/12/55/FPmDEq.jpg');
+    height: 1000px; */
+      font-size: 100px;
+      text-align: center;
+      padding: 200px;
+  }
+
+.fa{
+    float: right;
+    border-radius: 40px;
+}
+
+  .fa:hover{
+      background-color: #7CFC00
+  }
+
+  section{
+      color: #0000CD;
+  }

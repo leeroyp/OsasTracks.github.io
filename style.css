@@ -57,7 +57,7 @@ body{
     background-color: cornflowerblue;
     position: relative;
     border-radius: 10px;
-    /* margin-top: 20px; */
+    
 }
 
 .soul{
@@ -66,5 +66,25 @@ body{
     background-color: darkslategray;
     position: relative;
     border-radius: 10px;
-    /* margin-top: 20px; */
+    
+}
+
+#genre-id{
+    margin-left: 800px;
+    font-size: 6rem;
+}
+
+#artist-id{
+    margin-left: 800px;
+   font-size: 6rem;
+}
+
+#create-playlist-id{
+    margin-left: 800px;
+    font-size: 6rem;
+}
+
+#songs-id{
+    margin-left: 800px;
+    font-size: 6rem;
 }

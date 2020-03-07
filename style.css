@@ -1,0 +1,70 @@
+body{
+    
+    background-image: url("images/image5.jpg");
+    /* background-image: url("images/sun-music.jpg"); */
+    color: #140b0b;
+}
+
+.artist-name{
+    /* color: #ffffff; */
+}
+
+.artist-column{
+    margin-bottom: 20px;
+}
+
+
+.genre-size{
+   
+    border-radius: 10px;
+    margin: 100px 20px 400px 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.hip{
+    width: 300px;
+    height: 200px;
+    background-color: darkgoldenrod; 
+    position: relative;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+.pop{
+    width: 300px;
+    height: 200px;
+    background-color: aqua; 
+    position: relative;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+
+.rock{
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+
+.country{
+    width: 300px;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: relative;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+
+.soul{
+    width: 300px;
+    height: 200px;
+    background-color: darkslategray;
+    position: relative;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}

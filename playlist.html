@@ -4,101 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <title>Generate Playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
 
 </head>
 
 <body>
+   
 
-    <!-- Navigation -->
     <nav class="nav different nav-pills flex-column flex-sm-row navbar navbar-dark bg-dark" id="navbar">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link home" href="homepage.html">Home</a>
+                <a class="nav-link home" href="#">Home</a>
             </li>
         </ul>
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link artist" href="artist.html">Artist</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link genre" href="genre.html">Genre</a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
                 <a class="nav-link song" href="songs.html">Song</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-                <a class="nav-link playlist" href="#">Create Playlist</a>
+                <a class="nav-link playlist" href="playlist.html">Create Playlist</a>
             </li>
         </ul>
     </nav>
-
-    <h1 id="create-playlist-id">Create Playlist</h1>
-
-
-    <div class="container">
-        <!-- Content here -->
-
-        <div class="container">
-            <div class="row">
-              <div class="col-3">
-                
-              </div>
-
-
-              <div class="col-6">
-               
-        <div>
-            <form>
-                <div class="form-group">
-                    <label for="inputEmail4">Genre</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress">Artist(s)</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Year(s)</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2"></label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Year(s)</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="">
-                </div>
-                
-                  
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Video Included
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
+    <h1 id="genre-id">Genre</h1>
+    <div class="container-genre">
+        <div class="hip genre-size">
+            <p>Hip-Hop</p>
         </div>
+        <div class="pop genre-size">
+            <p>Pop</p>
+        </div>
+        <div class=" country genre-size">
+            <p>Country</p>
+        </div>
+        <div class="rock genre-size">
+            <p>Rock</p>
+        </div>
+        <!-- <div class="soul genre-size">
+            <p>Soul</p>
+        </div> -->
+    </div>
 
-    </div>
-    <div class="col-3">
-     
-    </div>
-  </div>
-</div>
 
-    </div>
+
 
     <footer class="container">
         <button class="fa icon- fa-twitter-square" style="font-size:48px"></button>
@@ -106,7 +69,11 @@
         <button class="fa icon- fa-facebook-square" aria-hidden="true" style="font-size: 48px;"></button>
         <button class="fa icon- fa-github-square" style="font-size:48px"></button>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
-
 </html>
+
+<!-- //fixed-top  -->

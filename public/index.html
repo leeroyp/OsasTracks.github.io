@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="nav different nav-pills flex-column flex-sm-row navbar navbar-dark bg-dark" id="navbar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link home" href="homepage.html">Home</a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link artist" id="artist" href="#">Artist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link genre" href="genre.html">Genre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link song" href="songs.html">Song</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link playlist" href="playlist.html">Create Playlist</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2 search" id="form" type="search" placeholder="Search for Artists" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
+    </form>
+    <!-- <iframe src="https://www.spotify.com/ca-en/" height="200" width="300"></iframe> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image1"></button>
+                <p class="artist-info" id="artist-name1"></p>
+                <iframe id="frame" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image2"></button>
+                <p class="artist-info" id="artist-name2"></p>
+                <iframe id="frame2" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image3"></button>
+                <p class="artist-info" id="artist-name3"></p>
+                <iframe id="frame3" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image4"></button>
+                <p class="artist-info" id="artist-name4"></p>
+                <iframe id="frame4" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image5"></button>
+                <p class="artist-info" id="artist-name5"></p>
+                <iframe id="frame5" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image6"></button>
+                <p class="artist-info" id="artist-name6"></p>
+                <iframe id="frame6" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image7"></button>
+                <p class="artist-info" id="artist-name7"></p>
+                <iframe id="frame7" src="" width="100%" height="125"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <button class="artist-name" id="artist-image8"></button>
+                <p class="artist-info" id="artist-name8"></p>
+                <iframe id="frame8" src="" width="100%" height="125"></iframe>
+            </div> 
+        </div>
+    </div>
+
+    <div class="search hide">
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+            <p class="remove artist-name" id="artistImage-search"></p>
+            <p class="remove artist-info" id="artistName-search"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hide">
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+            <iframe class="remove artist-name" id="drake-tracks"></iframe>
+            <p class="remove artist-info"></p>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

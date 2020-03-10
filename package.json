@@ -1,5 +1,5 @@
 {
-  "name": "spotitfyapi",
+  "name": "spotifyapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "helmet": "^3.21.3",
     "node-spotify-api": "^1.1.1"
   }
 }

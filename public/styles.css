@@ -1,8 +1,17 @@
 body{
     
-    background-image: url("images/image5.jpg");
+    /* background-image: url("images/background\ image.jpg"); */
+    background-image: url("images/homepage_background.jpeg");
     /* background-image: url("images/sun-music.jpg"); */
     color: #140b0b;
+}
+
+#welcome{
+    font-size: 5rem;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    margin-left: 200px;
+    color: #ffffff;
 }
 
 .artist-name{
@@ -87,4 +96,8 @@ body{
 #songs-id{
     margin-left: 700px;
     font-size: 6rem;
+}
+
+.nav-link{
+    font-size: 2rem;
 }

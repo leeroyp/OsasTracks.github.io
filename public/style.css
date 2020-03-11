@@ -1,4 +1,5 @@
 body{
+    background-image: url("images/homepage_background.jpeg");
     /* background-image: url("images/sun-music.jpg"); */
     /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKoddjVPjpwiHyJkI_aRvaPB7wsuw0lAaaETUcelvcjrbLOeEv"); */
 }
@@ -32,3 +33,7 @@ margin-left: 400px;
 .hide{
     display:none;
 } 
+
+.nav-link{
+    font-size: 2rem;
+}

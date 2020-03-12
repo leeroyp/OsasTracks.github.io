@@ -22,7 +22,6 @@ function artistSearch(userInput) {
     })
 }
 
-
 function getMultiple() {
 
     var multipleArtists = 'http://localhost:3000/getmultiple'
@@ -90,7 +89,7 @@ function getMultiple() {
         $('#artist-image8').append(image8)
         $('#artist-name8').append(response.msg.artists[7].name)
         $("#frame8").attr("src", 'http://p.scdn.co/mp3-preview/8999706b82c8271c92b1ad8c1fc2b5f9a9af166f?cid=6313d40896f64a2ead4f67035049a647')
-        
+
         // console.log(response);
     })
 }
@@ -105,7 +104,8 @@ function getAlbumTracks() {
     }).then(function (response) {
         // console.log(response)
     }
-)}
+    )
+}
 
 getAlbumTracks()
 
@@ -127,6 +127,7 @@ $(document).ready(function () {
 function artistPlaylist() {
 
     var multipleArtists = 'http://localhost:3000/getmultiple'
+    var albumPics = 'http://localhost:3000/albumpics'
 
     $.ajax({
         url: multipleArtists,
@@ -171,7 +172,7 @@ function artistPlaylist() {
 
             var artistImage3 = (response.msg.artists[2].images[0].url)
             var image3 = $("<img>").attr("src", artistImage3);
-    
+
             $('#jbImage').append(image3)
         })
 
@@ -213,7 +214,7 @@ function artistPlaylist() {
 
             var artistImage6 = (response.msg.artists[5].images[0].url)
             var image6 = $("<img>").attr("src", artistImage6);
-    
+
             $('#harryImage').append(image6)
         })
 
@@ -241,17 +242,85 @@ function artistPlaylist() {
 
             var artistImage8 = (response.msg.artists[7].images[0].url)
             var image8 = $("<img>").attr("src", artistImage8);
-    
+
             $('#weekndImage').append(image8)
+        })
+
+        $.ajax({
+            url: albumPics,
+            method: "GET"
+        }).then(function (response) {
+
+            var artistImage1 = (response.msg.artists[0].images[0].url)
+            var image1 = $("<img>").attr("src", artistImage1);
+
+            $('#drakeImage').append(image1)
+
+            console.log(response)
+
         })
 
     }
 
-    )
-}
+)}
 
 artistPlaylist()
 
+function albumPictures() {
+
+    var albumPics = 'http://localhost:3000/albumpics'
+
+    $.ajax({
+        url: albumPics,
+        method: "GET"
+    }).then(function (response) {
+
+
+        $('#artist-image1').on('click', function () {
+        $('.drakeAlbum').removeClass('hide')
+
+        var albumImage1 = (response.msg.albums[0].images[0].url)
+        var albumImage2 = (response.msg.albums[1].images[0].url)
+        var albumImage3 = (response.msg.albums[2].images[0].url)
+        var albumImage4 = (response.msg.albums[3].images[0].url)
+        var image1 = $("<img>").attr("src", albumImage1);
+        var image2 = $("<img>").attr("src", albumImage2);
+        var image3 = $("<img>").attr("src", albumImage3);
+        var image4 = $("<img>").attr("src", albumImage4);
+
+        $('#drakeAlbum1').append(image1)
+        $('#drakeAlbum2').append(image2)
+        $('#drakeAlbum3').append(image3)
+        $('#drakeAlbum4').append(image4)
+    
+    })
+
+        $('#artist-image2').on('click', function () {
+        $('.kendrickAlbum').removeClass('hide')
+
+        var albumImage5 = (response.msg.albums[4].images[0].url)
+        var albumImage6 = (response.msg.albums[5].images[0].url)
+        var albumImage7 = (response.msg.albums[6].images[0].url)
+        var albumImage8 = (response.msg.albums[7].images[0].url)
+        var image5 = $("<img>").attr("src", albumImage5);
+        var image6 = $("<img>").attr("src", albumImage6);
+        var image7 = $("<img>").attr("src", albumImage7);
+        var image8 = $("<img>").attr("src", albumImage8);
+
+        $('#kendrickAlbum1').append(image5)
+        $('#kendrickAlbum2').append(image6)
+        $('#kendrickAlbum3').append(image7)
+        $('#kendrickAlbum4').append(image8)
+
+    })
+
+        console.log(response)
+
+    })
+
+}
+
+albumPictures()
 
 ///   When they click on the picture, it sends them to a page of their top tracks
 ///   Find API for image of the artist

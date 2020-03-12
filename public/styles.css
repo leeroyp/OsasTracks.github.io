@@ -23,7 +23,6 @@ body{
     margin-bottom: 20px;
 }
 
-
 .genre-size{
    
     border-radius: 10px;
@@ -43,6 +42,7 @@ body{
     border-radius: 10px;
     /* margin-top: 20px; */
 }
+
 .pop{
     width: 300px;
     height: 200px;
@@ -103,15 +103,22 @@ body{
     font-size: 2rem;
     color: #ffffff;
 }
+
 .card{
     background-color: rgb(197, 159, 165);
     border: black 2px solid;
     border-radius: 30px 0px 30px 0px;
 }
+
 .card-title{
     font-size: 2rem;
 }
 
 .hide {
     display: none;
+}
+
+.genre-name{
+    margin-bottom: 50px;
+    margin-left: 25px;
 }

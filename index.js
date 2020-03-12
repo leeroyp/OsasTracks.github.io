@@ -63,7 +63,21 @@ app.get('/toptracks', (req, res) => {
     // When you use spotify.request() you can give request actual API endpoints like below.
     // You can get these endpoints right out of the spotify API Here: https://developer.spotify.com/documentation/web-api/reference-beta/
     spotify
-    .request('https://api.spotify.com/v1/tracks?ids=5yY9lUy8nbvjM1Uyo1Uqoc,5ry2OE6R2zPQFDO85XkgRb,6DCZcSspjsKoFjzjrWoCdn,2G7V7zsVDxg1yRsu7Ew9RJ,5bvnqVuq7UFl0txSlHpsfS')
+    .request('https://api.spotify.com/v1/tracks?ids=5yY9lUy8nbvjM1Uyo1Uqoc,5ry2OE6R2zPQFDO85XkgRb,6DCZcSspjsKoFjzjrWoCdn,2G7V7zsVDxg1yRsu7Ew9RJ,5bvnqVuq7UFl0txSlHpsfS,4eLPsYPBmXABThSJ821sqY,7ycBtnsMtyVbbwTfJwRjSP,6PBZN8cbwkqm1ERj2BGXJ1,1bkN9nIkkCnXeG4yitVS1J')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.get('/albumpics', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/albums/?ids=1lXY618HWkwYKJWBRYR4MK,40GMAhriYJRO1rsY4YdrZb,0ptlfJfwGTy0Yvrk14JK1I,2ZUFSbIkmFkGag000RWOpA')
     .then(function(response) {
         console.log('response', response);
         res.json({msg: response});

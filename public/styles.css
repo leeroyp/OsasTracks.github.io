@@ -1,8 +1,5 @@
 body{
-    
-    /* background-image: url("images/background\ image.jpg"); */
-    background-image: url("images/homepage_background.jpeg");
-    /* background-image: url("images/sun-music.jpg"); */
+    background-image: url("images/background.jpeg");
     color: #140b0b;
 }
 
@@ -11,6 +8,10 @@ body{
     margin-top: 200px;
     margin-bottom: 400px;
     margin-left: 200px;
+    color: #ffffff;
+}
+
+#genre-id{
     color: #ffffff;
 }
 
@@ -100,4 +101,10 @@ body{
 
 .nav-link{
     font-size: 2rem;
+    color: #ffffff;
+}
+.card{
+    background-color: lightpink;
+    border: black 2px solid;
+    border-radius: 30px 0px 30px 0px;
 }

@@ -1,8 +1,7 @@
 body{
-    background-image: url("images/homepage_background.jpeg");
-    /* background-image: url("images/sun-music.jpg"); */
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKoddjVPjpwiHyJkI_aRvaPB7wsuw0lAaaETUcelvcjrbLOeEv"); */
-}
+    
+    background-image: url("images/background.jpeg");
+    }
 
 .artist-name{
     font-size: 30px;
@@ -36,4 +35,5 @@ margin-left: 400px;
 
 .nav-link{
     font-size: 2rem;
+    color: #ffffff;
 }

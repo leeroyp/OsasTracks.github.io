@@ -12,7 +12,7 @@ function artistSearch(userInput) {
     }).then(function (response) {
 
         var userImage = (response.msg.tracks.items[0].album.images[0].url)
-        var image = $("<img>").attr("src", userImage);
+        var image = $("<img>").attr("src", userImage)
 
         //   Appending the image
         $('#artistImage-search').append(image)
@@ -21,6 +21,7 @@ function artistSearch(userInput) {
 
     })
 }
+
 
 function getMultiple() {
 
@@ -122,56 +123,70 @@ $('#search').on('click', function () {
 $(document).ready(function () {
     getMultiple()
 })
-
 $('#artist-image1').on('click', function () {
+    $("#drake").attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX7QOv5kjbU68')
+    $('#drake').removeClass('hide')
     $('.container').addClass('hide')
-
-    var toptracks = 'http://localhost:3000/toptracks'
-
-    $.ajax({
-        url: toptracks,
-        method: "GET"
-    }).then(function (response) {
-        // $('#drake-tracks').append('hello')
-        $("#drake-tracks").attr("src", 'https://api.spotify.com/v1/playlists/2D2A7VKm7GMjNlN4Bu1WE7/tracks')
-        // $('#drake-tracks').append(response.msg.tracks[0].external_urls)
-        // console.log(response)
-        // console.log(response.msg.tracks[0].external_urls)
-    })
-    
+    console.log('clicked1')
 })
 
 $('#artist-image2').on('click', function () {
+    $("#kendrick").attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX5EkyRFIV92g')
+    $('#kendrick').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked2')
 })
 
 $('#artist-image3').on('click', function () {
+    $('#jb').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DXc2aPBXGmXrt')
+    $('#jb').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked3')
 })
 
 $('#artist-image4').on('click', function () {
+    $('#Swift').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX5KpP2LN299J')
+    $('#Swift').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked4')
 })
 
 $('#artist-image5').on('click', function () {
+    $('#ariana').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX1PfYnYcpw8w')
+    $('#ariana').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked5')
 })
 
 $('#artist-image6').on('click', function () {
+    $('#harry').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3ZsXzq')
+    $('#harry').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked6')
 })
 
 $('#artist-image7').on('click', function () {
+    $('#billie').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX6cg4h2PoN9y')
+    $('#billie').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked7')
 })
 
 $('#artist-image8').on('click', function () {
+    $('#weeknd').attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz')
+    $('#weeknd').removeClass('hide')
+    $('.container').addClass('hide')
     console.log('clicked8')
 })
-
 ///   When they click on the picture, it sends them to a page of their top tracks
 ///   Find API for image of the artist
 
 ///   Genre - 12 different categories - based on the category selected, generate a random playlist 
 
 /// response.msg.items[0]
+
+
+
+
+// js for the populating playlist 
+

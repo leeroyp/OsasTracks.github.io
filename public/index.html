@@ -7,6 +7,7 @@
     <title>Artist</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,29 +18,20 @@
     <nav class="nav different nav-pills flex-column flex-sm-row navbar navbar-dark bg-dark" id="navbar">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link home" href="/homepage.html"><img id="logo" src="images/logo.jpg" width="50px" height="50px" alt=""></a>
+                <a class="nav-link home" href="/homepage.html"><img id="logo" src="images/logo.jpg" width="50px"
+                        height="50px" alt=""></a>
             </li>
         </ul>
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link artist" id="/artist" href="">Artist</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link genre" href="genre.html">Genre</a>
-            </li> -->
-            <!-- <li class="nav-item">
-                <a class="nav-link song" href="songs.html">Song</a>
-            </li> -->
+
             <li class="nav-item">
                 <a class="nav-link playlist" href="playlist.html">Playlist</a>
             </li>
         </ul>
     </nav>
-
-    <!-- <form class="form-inline">
-        <input class="form-control mr-sm-2 search" id="form" type="search" placeholder="Search for Artists" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" id="search" type="submit">Search</button>
-    </form> -->
 
     <div class="container">
         <div class="row">
@@ -82,7 +74,7 @@
                 <button class="artist-name" id="artist-image8"></button>
                 <p class="artist-info" id="artist-name8"></p>
                 <audio controls id="frame8" src="" width="100%" height="125"></audio>
-            </div> 
+            </div>
         </div>
     </div>
 
@@ -91,8 +83,8 @@
             <div class="col-lg-4">
             </div>
             <div class="col-lg-4">
-            <p class="remove artist-name" id="artistImage-search"></p>
-            <p class="remove artist-info" id="artistName-search"></p>
+                <p class="remove artist-name" id="artistImage-search"></p>
+                <p class="remove artist-info" id="artistName-search"></p>
             </div>
         </div>
     </div>
@@ -102,100 +94,263 @@
             <div class="col-lg-4">
             </div>
             <div class="col-lg-4">
-            <iframe class="remove artist-name" id="drake-tracks"></iframe>
-            <p class="remove artist-info"></p>
+                <iframe class="remove artist-name" id="drake-tracks"></iframe>
+                <p class="remove artist-info"></p>
             </div>
         </div>
     </div>
 
-<div>
+    <div class="container-xl">
         <div>
-            <p id="drakeImage"></p>
-            <iframe id="drake"    class="hide" src="" width="1580" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
-            <h1 id="drakeBioHeader" class="hide">Biography</h1>
-            <p id="drakeBio" class="hide">Canadian rapper and vocalist Drake sustained a high-level commercial presence shortly after he hit the scene in 2006, whether with his own chart-topping releases or a long string of guest appearances on hits by the likes of Lil Wayne, Rihanna, and A$AP Rocky. Thanks to his introspective rap style, his sensitive R&B crooning, and his gold-touch songwriting, each one of his albums -- from 2011's Take Care to 2018's Scorpion -- topped charts worldwide, and his singles, like the Grammy-winning "Hotline Bling," and many mixtapes did too. As his star rose, he helped others along, sponsoring the Weeknd's early work, starting the OVO Sound label, and giving features on his records to up-and-coming acts. By the second decade of his career, Drake's constant chart domination, his Grammy wins and nominations, and his meme-worthy cultural presence made him one of the world's most popular musicians.</p>
-            <div class="drakeAlbum hide">
-            <p id="drakeAlbum1"></p>
-            <p id="drakeAlbum2"></p>
-            <p id="drakeAlbum3"></p>
-            <p id="drakeAlbum4"></p>
-            </div>
-        </div>
-            <p id='kendrickImage'></p>
-            <iframe id="kendrick" class="hide"  src="" width="1580" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="kendrickBioHeader" class="hide">Biography</h1>
-            <p id="kendrickBio" class="hide">Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him. After several years of development, Lamar hit his creative and chart-topping stride in the 2010s. Good Kid, M.A.A.D City (2012), the Grammy-winning To Pimp a Butterfly (2015), and the Grammy- and Pulitzer Prize-winning DAMN. (2017), his three proper major-label albums, have displayed an unmatched mix of inventive wordplay and compelling conceptual narratives, examining internal conflict, flaunting success, and uplifting his community. The screenplay-level detail of Lamar's writing has been enriched by a collective of producers, instrumentalists, singers, and rappers, a high percentage of whom -- including inspirations Dr. Dre and MC Eiht, and contemporaries Sounwave and Jay Rock -- represent Lamar's native Los Angeles. Lamar's cinematic and collaborative inclinations inevitably attracted the mainstream film industry. Black Panther: The Album (2018) was the source of three of Lamar's Top Ten pop hits.</p>
-            <div class="kendrickAlbum hide">
-            <p id="kendrickAlbum1"></p>
-            <p id="kendrickAlbum2"></p>
-            <p id="kendrickAlbum3"></p>
-            <p id="kendrickAlbum4"></p>
-            </div>
-        </div>
-        <div>
-            <p id='jbImage'></p>
-            <iframe id="jb" class="hide"  src="" width="1250" height="350"frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="jbBioHeader" class="hide">Biography</h1>
-            <p id="jbBio" class="hide">Over the course of his career, Justin Bieber has amassed more than 50 billion streams and more than 60 million album equivalents worldwide. Justin’s Grammy-winning 2015 album PURPOSE has sold over 21 millions copies worldwide.
-                                       As he looks ahead to his 5th studio album, CHANGES, Bieber is once again ruling the airwaves and dominating the charts. Along with the massive new singles “Intentions” and “Yummy”, his recent collaboration with Ed Sheeran “I Don’t Care” hit #1 in 26 countries worldwide, Billie Eilish’s “Bad Guy” – with a little help from a Bieber remix – reached #1 in the US, and “10,000 Hours” with Dan + Shay became the highest charting debut for a country song in the history of the Billboard Hot 100.</p>
-            <p id="jbAlbum1"></p>
-            <p id="jbAlbum2"></p>
-            <p id="jbAlbum3"></p>
-            <p id="jbAlbum4"></p>
-        </div>
-        <div>
-            <p id='swiftImage'></p>
-            <iframe id="Swift"    class="hide"  src=""width="1250" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="swiftBioHeader" class="hide">Biography</h1>
-            <p id="swiftBio" class="hide">Taylor Swift is that rarest of pop phenomena: a superstar who managed to completely cross over from country to the mainstream. Other singers performed similar moves -- notably, Dolly Parton and Willie Nelson both became enduring mainstream icons based on their '70s work -- but Swift shed her country roots like they were a second skin; it was a necessary molting to reveal she was perhaps the sharpest, savviest populist singer/songwriter of her generation, one who could harness the zeitgeist and make it personal and, just as impressively, perform the reverse. These skills were evident on her earliest hits, especially the neo-tribute "Tim McGraw," but her second album, 2008's Fearless, showcased a songwriter discovering who she was and, in the process, finding a mass audience. Fearless wound up having considerable legs not only in the U.S., where it racked up six platinum singles on the strength of the Top Ten hits "Love Story" and "You Belong with Me," but throughout the world, performing particularly well in the U.K., Canada, and Australia. Speak Now, delivered almost two years later, consolidated that success and moved Swift into the stratosphere of superstardom. Her popularity only increased over her next three albums -- Red (2012), 1989 (2014), Reputation (2017) -- and found her moving assuredly into a pop realm where she already belonged.</p>
-            <p id="swiftAlbum1"></p>
-            <p id="swiftAlbum2"></p>
-            <p id="swiftAlbum3"></p>
-            <p id="swiftAlbum4"></p>
-        </div>
-        <div>
-            <p id='arianaImage'></p>
-            <iframe id="ariana"   class="hide"  src="" width="1250" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="arianaBioHeader" class="hide">Biography</h1>
-            <p id="arianaBio" class="hide">Ariana Grande is perhaps the quintessential pop star of the last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with the hit single "The Way," Grande initially appeared to be the heir to the throne of Mariah Carey. Much of this was due to her powerhouse vocals, a singing style that belied her petite frame. With its Babyface production, her debut Yours Truly underscored her debt to '90s R&B, but Grande quickly incorporated hip-hop and EDM into her music. "Problem," a 2014 smash duet with Iggy Azalea, was the first indication of her development, an evolution underscored by the hits "Bang Bang" and "Love Me Harder," which featured Jessie J & Nicki Minaj and the Weeknd, respectively. Grande maintained her popularity with 2015's Dangerous Woman, but she hit her stride with 2018's Sweetener and its swift sequel Thank U, Next, whose title track became her first number one pop hit, an achievement quickly eclipsed by "7 Rings," a glitzy anthem for the Instagram age that consolidated her stardom and artistry.</p>
-            <p id="arianaAlbum1"></p>
-            <p id="arianaAlbum2"></p>
-            <p id="arianaAlbum3"></p>
-            <p id="arianaAlbum4"></p>
-        </div>
-        <div>
-            <p id='harryImage'></p>
-            <iframe id="harry"    class="hide"  src="" width="1250" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="harryBioHeader" class="hide">Biography</h1>
-            <p id="harryBio" class="hide">Born in Bromsgrove, Worcestershire, England, on February 1, 1994, Harry Styles first sang in a band in a school competition. In 2010 he performed on the television show The X Factor, where the judges combined him with four other young male singers to form One Direction. The boy band became a pop music sensation, delivering hits like "Best Song Ever" and "Story of My Life" through five immensely successful studio albums. Styles then made a solo splash in 2017 with his debut single, "Sign of the Times," and a self-titled album.</p>
-            <p id="harryAlbum1"></p>
-            <p id="harryAlbum2"></p>
-            <p id="harryAlbum3"></p>
-            <p id="harryAlbum4"></p>        
-        </div>
-        <div>
-            <p id='billieImage'></p>
-            <iframe id="billie"   class="hide" src="" width="1250" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="billieBioHeader" class="hide">Biography</h1>
-            <p id="billieBio" class="hide">18-year-old global pop-phenom Billie Eilish has fast become one of the biggest stars to emerge in since the release of her debut single “ocean eyes,” and continues to shatter the ceiling of music with her genre-defying sound. Fast forward from her humble breakout, Billie’s album WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at #1 in the Billboard 200 in the U.S, as well as in the UK, Australia, Canada, New Zealand, Netherlands, Belgium, Ireland, Sweden, Norway, Finland and many more. It is now the biggest North American debut of the decade (male, female or group), shifting 313,000 units in the first week and has already hit NUMBER 1 in the Billboard 200 album 3 times since its release in March, earning Billie more than 15 billion combined streams worldwide to date - and has won her 5 GRAMMYs (Best New Artist, Album Of The Year, Record Of The Year, Song Of The Year, Best Pop Vocal Album). Billie is currently on her sold-out WHEN WE ALL FALL ASLEEP, WORLD TOUR and about to embark on her Arena WHERE DO WE GO? WORLD TOUR.</p>
-            <p id="billieAlbum1"></p>
-            <p id="billieAlbum2"></p>
-            <p id="billieAlbum3"></p>
-            <p id="billieAlbum4"></p>
-        </div>
-        <div>
-            <p id='weekndImage'></p>
-            <iframe id="weeknd"   class="hide"  src="" width="1250" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <h1 id="weekndBioHeader" class="hide">Biography</h1>
-            <p id="weekndBio" class="hide">The Weeknd is the alias of alternative R&B enigma-turned-pop star Abel Tesfaye, whose aching accounts of emotionally and physically toxic indulgences have translated to multi-platinum sales and Grammy recognition. The singer and songwriter made his early-2010s breakthrough with morose ballads that seemed to have no designs on mainstream appeal. Within a few years, however, Tesfaye had scored Top Ten hits with an Ariana Grande duet ("Love Me Harder"), the lead single from a major motion picture ("Earned It"), and a retro-contemporary disco-funk single ("I Can't Feel My Face"), the last of which was nominated for a Nickelodeon Kids' Choice Award despite its subject (cocaine). Tesfaye received early support from Drake and scored his first Top Ten R&B/hip-hop placement as the featured artist on the fellow Torontonian's "Crew Love," but he swiftly outgrew his status as a Drake affiliate with his own hits and a streak of appearances on high-profile tracks by Wiz Khalifa, Future, Beyoncé, and Lana Del Rey.</p>
-            <p id="weekndAlbum1"></p>
-            <p id="weekndAlbum2"></p>
-            <p id="weekndAlbum3"></p>
-            <p id="weekndAlbum4"></p>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-3">
 
-<script src="script.js"></script>
+                    <p id="drakeImage" id="img"></p>
+                </div>
+                <div class="col-9">
+                    <h1 id="drakeBioHeader" class="hide">Drake</h1>
+                    <p id="drakeBio"  id="bio" class="hide">Canadian rapper and vocalist Drake sustained a high-level commercial
+                        presence shortly after he hit the scene in 2006, Thanks to his introspective rap style, his
+                        sensitive R&B crooning, and his gold-touch songwriting, each one of his albums -- from 2011's
+                        Take Care to 2018's Scorpion -- topped charts worldwide, and his singles, like the
+                        Grammy-winning "Hotline Bling," and many mixtapes did too. </p>
+                </div>
+                <div class="drakeAlbum hide">
+
+                    <div class="row">
+                        
+                        <div class="col-8">
+                            <iframe id="drake" class="hide" src="" width="250" height="250" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                       
+                        <div class="col-4">
+                            <p id="drakeAlbum1"></p>
+                            <p id="drakeAlbum2"></p>
+                            <p id="drakeAlbum3"></p>
+                            <p id="drakeAlbum4"></p>
+                        </div>
+                    
+                   
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <p id='kendrickImage' id="image"></p>
+                    </div>
+                    <div class="col-9">
+                        <h1 id="kendrickBioHeader" class="hide">Kendrick Lamar</h1>
+                        <p id="kendrickBio" id="bio" class="hide">Indisputably the most acclaimed rap artist of his generation,
+                            Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success
+                            while
+                            earning the respect and support of those who inspired him. After several years of
+                            development,
+                            Lamar hit his creative and chart-topping stride in the 2010s. </p>
+                    </div>
+
+                 <div class="row">
+                        <div class="col-8">
+                    <iframe id="kendrick" class="hide" src="" width="450" height="350" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                        <div class="col-4"> 
+                    <div class="kendrickAlbum hide">
+                        <p id="kendrickAlbum1"></p>
+                        <p id="kendrickAlbum2"></p>
+                        <p id="kendrickAlbum3"></p>
+                        <p id="kendrickAlbum4"></p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-3">
+                        <p id='jbImage' id="image"></p>
+                    </div>
+                    <div class="col-9">
+                        <h1 id="jbBioHeader" class="hide">Justine Bieber</h1>
+                        <p id="jbBio"  id="bio" class="hide">Over the course of his career, Justin Bieber has amassed more than 50
+                            billion streams and more than 60 million album equivalents worldwide. Justin’s
+                            Grammy-winning
+                            2015 album PURPOSE has sold over 21 millions copies worldwide.
+                        </p>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                    <iframe id="jb"  class="hide" src="" width="450" height="350" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media"></iframe>
+                        </div>
+                        <div class="col-4">
+                    <p id="jbAlbum1"></p>
+                    <p id="jbAlbum2"></p>
+                    <p id="jbAlbum3"></p>
+                    <p id="jbAlbum4"></p>
+                </div>
+            </div>
+                </div>
+                
+                <div>
+                    <div class="row">
+                        <div class="col-3">
+                            <p id='swiftImage' id="image"></p>
+                        </div>
+                        <div class="col-9">
+                            <h1 id="swiftBioHeader" class="hide">Taylor Swift</h1>
+                            <p id="swiftBio"  id="bio" class="hide">Taylor Swift is that rarest of pop phenomena: a superstar who
+                                managed to completely cross over from country to the mainstream. Other singers performed
+                                similar moves -- notably, Dolly Parton and Willie Nelson both became enduring mainstream
+                                icons based on their '70s work -- but Swift shed her country roots like they were a
+                                second
+                                skin; </p>
+                        </div>
+
+                <div class="row">
+                            <div class="col-8">
+                        <iframe id="Swift" class="hide" src="" width="450" height="350" frameborder="0"
+                        allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                         
+                    <div class="col-4">
+                        <p id="swiftAlbum1"></p>
+                        <p id="swiftAlbum2"></p>
+                        <p id="swiftAlbum3"></p>
+                        <p id="swiftAlbum4"></p>
+                    </div>
+                </div>
+                    </div>
+                    
+                    <div>
+                        <div class="row">
+                            <div class="col-3">
+                                <p id='arianaImage' id="image"></p>
+                            </div>
+                            <div class="col-9">
+                                <h1 id="arianaBioHeader" class="hide">Ariana Grande</h1>
+                                <p id="arianaBio"  id="bio" class="hide">Ariana Grande is perhaps the quintessential pop star of
+                                    the
+                                    last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with
+                                    the
+                                    hit single "The Way," Grande initially appeared to be the heir to the throne of
+                                    Mariah
+                                    Carey. Much of this was due to her powerhouse vocals, a singing style that belied
+                                    her
+                                    petite frame.</p>
+                            </div>
+                    <div class="row">
+                                <div class="col-3">
+                            <iframe id="ariana" class="hide" src="" width="450" height="350" frameborder="0"
+                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                </div>
+
+                        <div class="col-3">   
+                            <p id="arianaAlbum1"></p>
+                            <p id="arianaAlbum2"></p>
+                            <p id="arianaAlbum3"></p>
+                            <p id="arianaAlbum4"></p>
+                        </div>
+                    </div>
+                        </div>
+                        
+                        <div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p id='harryImage' id="image"></p>
+                                </div>
+                                <div class="col-9">
+                                    <h1 id="harryBioHeader" class="hide">Harry Styles</h1>
+                                    <p id="harryBio" id="bio" class="hide">Born in Bromsgrove, Worcestershire, England, on
+                                        February
+                                        1, 1994, Harry Styles first sang in a band in a school competition. In 2010 he
+                                        performed on the television show The X Factor, where the judges combined him
+                                        with
+                                        four other young male singers to form One Direction. Styles then made a solo
+                                        splash in 2017 with his
+                                        debut single, "Sign of the Times," and a self-titled album.</p>
+                                </div>
+
+                         <div class="row">
+                                    <div class="col-3">
+                                <iframe id="harry" class="hide" src="" width="450" height="350" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                                    </div>
+                          <div class="col-3">    
+                                <p id="harryAlbum1"></p>
+                                <p id="harryAlbum2"></p>
+                                <p id="harryAlbum3"></p>
+                                <p id="harryAlbum4"></p>
+                            </div>
+                        </div>
+                            </div>
+                           
+                            <div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <p id='billieImage' id="image"></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <h1 id="billieBioHeader" class="hide">Billie Eilish</h1>
+                                        <p id="billieBio"  id="bio" class="hide">18-year-old global pop-phenom Billie Eilish has
+                                            fast
+                                            become one of the biggest stars to emerge in since the release of her debut
+                                            single “ocean eyes,” and continues to shatter the ceiling of music with her
+                                            genre-defying sound. Fast forward from her humble breakout, Billie’s album
+                                            WHEN
+                                            WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at #1 in the Billboard 200 .</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <iframe id="billie" class="hide" src="" width="450" height="350" frameborder="0"
+                                                allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </div>
+                                        <div class="col-4">
+                                            <p id="billieAlbum1"></p>
+                                            <p id="billieAlbum2"></p>
+                                            <p id="billieAlbum3"></p>
+                                            <p id="billieAlbum4"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p id='weekndImage' id="image"></p>
+                                            </div>
+                                            <div class="col-9">
+                                                <h1 id="weekndBioHeader" class="hide">The Weeknd</h1>
+                                                <p id="weekndBio bio" id="bio" class="hide">The Weeknd is the alias of alternative
+                                                    R&B
+                                                    enigma-turned-pop star Abel Tesfaye, whose aching accounts of
+                                                    emotionally
+                                                    and physically toxic indulgences have translated to multi-platinum
+                                                    sales and
+                                                    Grammy recognition. The singer and songwriter made his early-2010s
+                                                    breakthrough with morose ballads that seemed to have no designs on
+                                                    mainstream appeal.</p>
+                                            </div>
+                                    <div class="row">
+                                                <div class="col-3">
+                                            <iframe id="weeknd" class="hide" src="" width="450" height="350" frameborder="0"
+                                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                                </div>
+
+                                      <div class="col-3">
+                                            <p id="weekndAlbum1"></p>
+                                            <p id="weekndAlbum2"></p>
+                                            <p id="weekndAlbum3"></p>
+                                            <p id="weekndAlbum4"></p>
+                                        </div>
+                                </div>
+                                    </div>
+
+                                       
+                                    </div>
+
+                                    <script src="script.js"></script>
 
 </body>
 

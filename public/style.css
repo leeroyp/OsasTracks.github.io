@@ -42,11 +42,25 @@ audio{
 width: 200px;
 }
 
-#drakeImage{
-    margin-top: 100px;
-    margin-left: 100px;
+#Image{
+    top: 0px;
+    right: 0px;
+    
 }
 #logo{
     width: 50px;
     height: 50px;}
+
+iframe{
+
+    bottom: 0; }
+
+
+
+p{
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    top: 0px;
+}
+
     

@@ -27,7 +27,7 @@ In order to make requests to the spotify API, a local server was created.
 A spotify account was require to make any request to the API, and we also had to register our app in order to
 recieve spotify ID and secret keys.
 
-Once we had our  local sever3000 running and connected to the API, using our key we were able to make
+Once we had our  local server3000 running and connected to the API, using our key we were able to make
 various requests to the API.
 
 Some of the requests made included "GetMultiple" which was used to search for multiple artist, we were able to

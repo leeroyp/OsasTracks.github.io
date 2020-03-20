@@ -2,7 +2,6 @@ var genreImage1 = ('https://i1.sndcdn.com/avatars-000397998705-vl0181-t200x200.j
 var image1 = $("<img>").attr("src", genreImage1);
 $('#genre-image1').append(image1)
 
-
 var genreImage2 = ('https://s3.amazonaws.com/production.mediajoint.prx.org/public/piece_images/276992/Folder.jpg')
 var image2 = $("<img>").attr("src", genreImage2);
 $('#genre-image2').append(image2)
@@ -30,7 +29,6 @@ $('#genre-image7').append(image7)
 var genreImage8 = ('https://i.pinimg.com/236x/d6/bf/01/d6bf01c6a0764ebe47448c5239be704f--rastafari-quotes-reggae-music.jpg')
 var image8 = $("<img>").attr("src", genreImage8);
 $('#genre-image8').append(image8)
-
 
 $('#genre-image1').on('click', function () {
     $("#hiphop").attr("src", 'https://open.spotify.com/embed/playlist/37i9dQZF1DWY6tYEFs22tT')

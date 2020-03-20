@@ -33,7 +33,6 @@ app.get('/spotifylist', (req, res) => {
   
 })
 
-
 app.get('/getmultiple', (req, res) => {
 
     console.log('show me req.query ', req.query);
@@ -54,16 +53,10 @@ app.get('/getmultiple', (req, res) => {
     });
 })
 
-app.get('/toptracks', (req, res) => {
+app.get('/drakerelatedartists', (req, res) => {
 
-    console.log('show me req.query ', req.query);
-    console.log("SPORTIFY", spotify)
-    
-    // You can use spotify.request() instead of spotify.search()
-    // When you use spotify.request() you can give request actual API endpoints like below.
-    // You can get these endpoints right out of the spotify API Here: https://developer.spotify.com/documentation/web-api/reference-beta/
     spotify
-    .request('https://api.spotify.com/v1/tracks?ids=5yY9lUy8nbvjM1Uyo1Uqoc,5ry2OE6R2zPQFDO85XkgRb,6DCZcSspjsKoFjzjrWoCdn,2G7V7zsVDxg1yRsu7Ew9RJ,5bvnqVuq7UFl0txSlHpsfS,4eLPsYPBmXABThSJ821sqY,7ycBtnsMtyVbbwTfJwRjSP,6PBZN8cbwkqm1ERj2BGXJ1,1bkN9nIkkCnXeG4yitVS1J')
+    .request('https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4/related-artists')
     .then(function(response) {
         console.log('response', response);
         res.json({msg: response});
@@ -74,10 +67,10 @@ app.get('/toptracks', (req, res) => {
     });
 })
 
-app.get('/albumpics', (req, res) => {
+app.get('/kendrickrelatedartists', (req, res) => {
 
     spotify
-    .request('https://api.spotify.com/v1/albums/?ids=1lXY618HWkwYKJWBRYR4MK,40GMAhriYJRO1rsY4YdrZb,0ptlfJfwGTy0Yvrk14JK1I,2ZUFSbIkmFkGag000RWOpA')
+    .request('https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg/related-artists')
     .then(function(response) {
         console.log('response', response);
         res.json({msg: response});
@@ -88,6 +81,88 @@ app.get('/albumpics', (req, res) => {
     });
 })
 
+app.get('/bieberrelatedartists', (req, res) => {
 
+    spotify
+    .request('https://api.spotify.com/v1/artists/1uNFoZAHBGtllmzznpCI3s/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get('/swiftrelatedartists', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.get('/arianarelatedartists', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.get('/harryrelatedartists', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/artists/6KImCVD70vtIoJWnq6nGn3/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.get('/billierelatedartists', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/artists/6qqNVTkY8uBg9cP3Jd7DAH/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.get('/weekndrelatedartists', (req, res) => {
+
+    spotify
+    .request('https://api.spotify.com/v1/artists/1Xyo4u8uXC1ZmMpatF05PJ/related-artists')
+    .then(function(response) {
+        console.log('response', response);
+        res.json({msg: response});
+    })
+    .catch(function(error) {
+        console.log('error', error);
+        res.json({msg: error});
+    });
+})
+
+app.listen(port, () => console.log(`Listening on port ${port}!`))

@@ -17,5 +17,5 @@ Once we had our  local sever3000 running and connected to the API, using our key
 various request to the api.
 Some of the requests made included "GetMultiple" which was used to search for multiple artist, we were able to
 get a response which was an image of particular artist and their and 30 second preview of their popular song
-Furthermore we made more requests such as Get similar artist, and Get  playlist
+Furthermore we made more requests such as Get similar artist, and Get  playlist.
 ALl together, this was a fun challengin project that pull all our skills in actions .
